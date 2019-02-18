@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+</head>
+<body>
+<h1>Admin</h1>
+<form action="/admin" method="POST">
+    <input type="hidden" name="operation" value="create"/>
+    flightNr: <input type="text" name="flightNr">
+    <br/>
+    airplaneType: <input type="text" name="airplaneType"/>
+    <br/>
+    departureCityId: <input type="text" name="departureCityId"/>
+    <br/>
+    departureTime: <input type="text" name="departureTime"/>
+    <br/>
+    arrivalCityId: <input type="text" name="arrivalCityId"/>
+    <br/>
+    arrivalTime: <input type="text" name="arrivalTime"/>
+    <br/>
+    <input type="submit" value="Create Flight"/>
+</form>
+<br/>
+<br/>
+<form action="/admin" method="POST">
+    <input type="hidden" name="operation" value="delete"/>
+    flightId: <input type="text" name="flightId">
+    <br/>
+    <input type="submit" value="Delete Flight">
+</form>
+<br/>
+<br/>
+<form action="/admin" method="POST">
+    <input type="hidden" name="operation" value="update"/>
+    flightId: <input type="text" name="flightId">
+    <br/>
+    flightNr: <input type="text" name="flightNr">
+    <br/>
+    airplaneType: <input type="text" name="airplaneType"/>
+    <br/>
+    departureCityId: <input type="text" name="departureCityId"/>
+    <br/>
+    departureTime: <input type="text" name="departureTime"/>
+    <br/>
+    arrivalCityId: <input type="text" name="arrivalCityId"/>
+    <br/>
+    arrivalTime: <input type="text" name="arrivalTime"/>
+    <br/>
+    <input type="submit" value="Update Flight"/>
+</form>
+<br/>
+<br/>
+<form action="/admin" method="POST">
+    <input type="hidden" name="operation" value="read"/>
+    <input type="submit" value="Read Flights"/>
+</form>
+
+</body>
+</html>

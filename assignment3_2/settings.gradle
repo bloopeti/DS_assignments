@@ -1,0 +1,6 @@
+rootProject.name = 'assignment3_2'
+include 'common'
+include 'consumer'
+include 'consumer'
+include 'producer'
+

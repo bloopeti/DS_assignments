@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+</head>
+<body>
+<h1>Admin</h1>
+<form action="/admin" method="POST">
+    <input type="hidden" name="operation" value="create"/>
+    parcelName: <input type="text" name="parcelName">
+    <br/>
+    parcelDescription: <input type="text" name="parcelDescription">
+    <br/>
+    parcelSenderId: <input type="text" name="parcelSenderId">
+    <br/>
+    parcelReceiverId: <input type="text" name="parcelReceiverId">
+    <br/>
+    parcelSenderCityId: <input type="text" name="parcelSenderCityId">
+    <br/>
+    parcelReceiverCityId: <input type="text" name="parcelReceiverCityId">
+    <br/>
+    <input type="submit" value="Create Parcel"/>
+</form>
+<br/>
+<br/>
+<form action="/admin" method="POST">
+    <input type="hidden" name="operation" value="delete"/>
+    parcelId: <input type="text" name="parcelId">
+    <br/>
+    <input type="submit" value="Delete Parcel">
+</form>
+<br/>
+<br/>
+<form action="/admin" method="POST">
+    <input type="hidden" name="operation" value="track"/>
+    parcelId: <input type="text" name="parcelId">
+    <br/>
+    <input type="submit" value="Start Tracking Parcel"/>
+</form>
+<br/>
+<br/>
+<form action="/admin" method="POST">
+    <input type="hidden" name="operation" value="updateRoute"/>
+    parcelId: <input type="text" name="parcelId">
+    <br/>
+    routeEntryTime: <input type="text" name="routeEntryTime">
+    <br/>
+    routeEntryCityId: <input type="text" name="routeEntryCityId">
+    <br/>
+    <input type="submit" value="Update Route"/>
+</form>
+
+</body>
+</html>

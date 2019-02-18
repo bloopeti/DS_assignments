@@ -1,0 +1,6 @@
+rootProject.name = 'assignment4'
+include 'data_access'
+include 'webservice_admin'
+include 'webservice_client'
+include 'webapp'
+

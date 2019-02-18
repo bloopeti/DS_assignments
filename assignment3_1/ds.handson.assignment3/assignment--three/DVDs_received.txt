@@ -1,0 +1,5 @@
+Got dvd: DVD Title=Dummy title0, DVD Year=2000, DVD Price=50.0
+Got dvd: DVD Title=Dummy title1, DVD Year=2001, DVD Price=50.0
+Got dvd: DVD Title=Dummy title2, DVD Year=2002, DVD Price=50.0
+Got dvd: DVD Title=Dummy title3, DVD Year=2003, DVD Price=50.0
+Got dvd: DVD Title=Dummy title4, DVD Year=2004, DVD Price=50.0
